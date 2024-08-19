@@ -162,6 +162,10 @@ article.gallery .media-container video {
   cursor: pointer;
 }
 
+.overlay-content {
+  cursor: auto;
+}
+
 .overlay--hidden {
   display: none;
 }
