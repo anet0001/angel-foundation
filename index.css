@@ -178,6 +178,26 @@ article.gallery .media-container video {
   object-fit: contain;
 }
 
+.our-partners .showcase {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  max-width: var(--content-width);
+  margin: 2rem auto;
+}
+
+.our-partners .showcase figure {
+  flex: 1;
+}
+
+.our-partners .showcase img {
+  max-width: 100%;
+  flex: 1;
+  display: block;
+  object-fit: cover;
+}
+
 @media screen and (max-width: 768px) {
   header nav ul {
     flex-direction: column;
