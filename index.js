@@ -6,6 +6,8 @@ class App {
       overlay: document.querySelector(".overlay"),
     };
 
+    console.log(this.elements.media);
+
     this.init();
   }
 
@@ -51,7 +53,7 @@ class App {
   }
 
   addEventListeners() {
-    this.elements.gallery.addEventListener("click", (e) => {
+    document.addEventListener("click", (e) => {
       if (e.target.classList.contains("media")) {
         this.toggleOverlay("show", "image", e.target.src);
       } else if (e.target.classList.contains("thumbnail")) {

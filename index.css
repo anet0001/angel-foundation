@@ -94,18 +94,40 @@ article.gallery .grid {
   gap: 1rem;
 }
 
-article.gallery .media-container {
+article.upcoming-events {
+  position: relative;
+}
+
+article.upcoming-events .grid {
+  margin-top: 1rem;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 1rem;
+}
+
+article.upcoming-events .grid .media-container {
+  width: 100%;
+  aspect-ratio: unset;
+  height: auto;
+}
+
+article.upcoming-events .grid .media-container .action-overlay svg {
+  width: min(100% - 4rem, 100px);
+  fill: var(--clr-white);
+}
+
+article .media-container {
   position: relative;
   aspect-ratio: 1 / 1;
   backrground-color: #d9d9d9;
   cursor: pointer;
 }
 
-article.gallery .media-container:hover .action-overlay {
+article .media-container:hover .action-overlay {
   opacity: 1;
 }
 
-article.gallery .media-container .action-overlay {
+article .media-container .action-overlay {
   position: absolute;
   top: 0;
   left: 0;
