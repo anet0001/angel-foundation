@@ -220,6 +220,43 @@ article.gallery .media-container video {
   object-fit: cover;
 }
 
+.group .grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+}
+
+.group .grid .media-container {
+  aspect-ratio: 1 / 1;
+  cursor: pointer;
+}
+
+.group .grid .media-container img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.group .media-container .action-overlay svg {
+  width: 2rem;
+  fill: var(--clr-white);
+}
+
+.our-services .media-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  max-width: var(--content-width);
+  margin: 2rem auto;
+}
+
+h3 {
+  font-size: 1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+}
+
 @media screen and (max-width: 768px) {
   header nav ul {
     flex-direction: column;
