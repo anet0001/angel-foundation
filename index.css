@@ -257,6 +257,10 @@ h3 {
   margin-bottom: 0.5rem;
 }
 
+h3 + p {
+  margin-bottom: 1.25rem;
+}
+
 @media screen and (max-width: 768px) {
   header nav ul {
     flex-direction: column;
