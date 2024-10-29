@@ -250,6 +250,17 @@ article.gallery .media-container video {
   margin: 2rem auto;
 }
 
+.board-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+}
+
+.board-grid img {
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+}
+
 h3 {
   font-size: 1rem;
   font-weight: 700;
