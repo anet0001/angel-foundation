@@ -252,7 +252,7 @@ article.gallery .media-container video {
 
 .board-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 1rem;
 }
 
@@ -280,10 +280,22 @@ h3 + p {
   header nav ul .logo {
     order: -1;
   }
+
+  .board-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+  }
 }
 
 @media screen and (max-width: 480px) {
   article.gallery .grid {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .board-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
   }
 }
